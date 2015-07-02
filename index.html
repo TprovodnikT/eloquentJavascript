@@ -1,4 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>My home page</title>
+		<style>
+	/* Определяет стили для красивых таблиц */
+	table	{ border-collapse: collapse; }
+	td, th { border: 1px solid black; padding: 3px 8px; }
+	th		 { text-align: left; }
+	.likeButton{
+		border: gray 1px solid;
+		border-radius: 2px;
+		background-color: #8AE68A;
+		width: 100px;
+		cursor: default;
+		text-align: center;
+	}
+	.dot{
+		background-color: black;
+		width: 8px;
+		height: 8px;
+		border-radius: 4px;
+		position: absolute;
+	}
+	#forDrawing{
+		border: gray 1px solid;
+		width: 500px;
+		height: 500px;
+		position: relative;
+	}
+	#scalable{
+		width: 40px;
+		height: 40px; 
+		background-color: #4DDBFF;
+		margin: 10px 0px;
+	}
+	.progressBar > div{
+		height: 0px;
+		width: 20px;
+		background-color: #8FA1B2;
+	}
+	.progressBar{
+		position: fixed;
+		top: 10px;
+		right: 10px;
+		border: 1px solid gray;
+		width: 20px;
+		height: 100px;
+	}
+	#timeout{
+		width: 50px;
+		height: 50px;
+		background-color: #CCFF99;
+		margin: 0 0 10px 0;
+	}
+	.afterPointer{
+		width: 20px;
+		height: 20px;
+		position: absolute;
+		text-align: center;
+		border: 1px solid gray;
+		border-radius: 3px;
+	}
+	</style>
+	</head>
+	<body>
+<!--		 <h1>My home page</h1>
+<p>Hello, I am Marijn and this is my home page.</p>
+<p>I also wrote a book! Read it
+	<a href="http://eloquentjavascript.net">here</a>.</p> -->
+<!--	 <p>one</p>
+<p>two</p>
+<p>three</p> -->
+<!-- <p> This is <img src="http://lorempixel.com/output/abstract-q-c-100-100-4.jpg" alt="asbtract"> in <img src="http://lorempixel.com/output/city-q-g-100-100-8.jpg" alt="city"></p>
+<p>
+	<div class="likeButton"onclick="replaceImages()">Replace</div>
+</p> -->
+<!-- <blockquote id="quote">
+	No book can ever be finished. While working on it we learn
+	just enough to find it immature the moment we turn away
+	from it.
+</blockquote> -->
+<!-- <p data-classified="secret">The launch code is 00000000.</p>
+<p data-classified="unclassified">I have two feet.</p> -->
 
+<!-- <p>Here it is, the identity function:</p>
+<pre data-language="javascript">
+function id(x) { var z;
+	return x; }
+</pre> -->
+<!-- <p><span id="one"></span></p>
+<p><span id="two"></span></p> -->
+<!-- <div style="margin: 100px auto">
+	<div id="rolling" style="display:inline-block; margin: 100px 300px; background-color: #99FFCC; width: 25px; height: 25px; border-radius:10px; position: absolute"></div>
+
+	<div id="satellite" style="display:inline-block; margin: 108px 308px; background-color: #FFFF99; width: 10px; height: 10px; border-radius:10px; position: absolute"></div>
+
+	<div id="hat" style="display:inline-block; margin: 100px 300px; background-color: #FF6699; width: 30px; height: 30px; border-radius:10px; position: absolute"></div>
+</div> -->
+
+<!-- <h1>Heading with a <span>span</span> element.</h1>
+<p>A paragraph with <span>one</span>, <span>two</span>
+	spans.</p> -->
+<!-- <div id="tableContainer"></div> -->
+
+		<!-- <script src="js/dom.js"></script> -->
+	<div>Excercisesd
+		<div>First:</div>
+		<input type="text" id="firstIn">
+		<div>Third</div>
+		<div id="wrapper">
+			<div data-tabname="one">Tab one</div>
+			<div data-tabname="two">Tab two</div>
+			<div data-tabname="three">Tab three</div>
+
+		</div>
+	</div>
+		<div id="content">
+			<div id="timeout"></div>
+			<div class="progressBar"><div></div></div>
+			<button id="firstButton">Click on <strong>me</strong></button>
+		 <button id="secondButton">Push <strong>me</strong> with what mouse buttons you like</button>
+		 <p id="clickableParagraph">Paragraph with <button id="thirdButton">button</button></p>
+		 <div id="buttonContainer">
+		 	<button>A</button>
+		 	<button>B</button>
+		 	<button>C</button>
+		 	<span style="cursor: default; padding: 2px; border: 1px solid gray; border-radius: 5px">nothing happens</span>
+		 </div>
+		 <a href="https://developer.mozilla.org/">MDN</a>
+		 <p>Here nothing happen</p>
+		 <div id="changeColor" style="border: 1px solid gray; border-radius: 5px; width: 110px">On key down V this div change color</div>
+		 <div id="forContinue">Press ctrl + space to continue</div>
+		 <div id="scalable"></div>
+		 <p id="forMouseOverParent">Move your mouse to the <strong>paragraph</strong></p>
+		 <div id="forFocus">
+		 	<p>Input your name: <input type="text" data-help="Full name"></p>
+		 	<p>Input your Age: <input type="text" data-help="Age in years"></p>
+		 	<p id="help"></p>
+		 </div>
+		 <div id="forMouseCoords"></div>
+		 <textarea id="" cols="30" rows="10"></textarea>
+		 <div id="forDrawing"></div>
+		</div>
+	 
+	 <script src="js/eventHandler.js"></script>
+		<!-- <script src="js/test.jse"></script> -->
+	</body>
+</html>
+<!-- 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -73,8 +222,8 @@
 	</style>
 </head>
 <body>
-	<!-- //projectElectronicLife -->
-	<!-- <div style="display: inline-block">
+	//projectElectronicLife
+	<div style="display: inline-block">
 		<div style="width: 200px; height:200px; border: solid black 1px;">
 			<pre id="animatedViewWorld">
 			
@@ -110,18 +259,19 @@
 		<div id="stOrF4" onclick="startAndStop(4)" style="cursor: default; border: 1px solid black; width: 42px;">Start</div>
 	</div>
 	<script src="testInheritance.js"></script>
-	<script src="js/projectElectronicLife.js"></script> -->
-	<!-- <script src="js/bugsAndErrorHandling.js"></script> -->
-	<!-- <script src="js/regularExpressions.js"></script> -->
-	<div id="clockMins"></div>
-	<div id="clock10Sec">
-		<div class="quarterMin1"></div>
-		<div class="quarterMin2"></div>
-		<div class="quarterMin3"></div>
-		<div class="quarterMin4"></div>
-	</div>
+	<script src="js/projectElectronicLife.js"></script>
+	<script src="js/bugsAndErrorHandling.js"></script>
+	<script src="js/regularExpressions.js"></script>
+<div id="clockMins"></div>
+<div id="clock10Sec">
+	<div class="quarterMin1"></div>
+	<div class="quarterMin2"></div>
+	<div class="quarterMin3"></div>
+	<div class="quarterMin4"></div>
+</div>
 	<script src="js/timer.js"></script>
-	<!-- <script src="js/modules.js"></script> -->
+	<script src="js/modules.js"></script>
 	<script src="js/programmingLanguage.js"></script>
+	<script src="js/dom.js"></script>
 </body>
-</html>
+</html> -->
