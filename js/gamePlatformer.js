@@ -31,12 +31,12 @@ var simpleLevelPlan = [
         }else if(ch === "!"){
           fieldType = "lava";
         }
-        gridLine =.push(fieldType);
+        gridLine.push(fieldType);
       }
       this.grid.push(gridLine);
     }
 
-    this.player = this.actor.filter(function(actor){
+    this.player = this.actors.filter(function(actor){
       return actor.type === "player";
     })[0];
     this.status = this.finishDelay = null;
@@ -72,3 +72,30 @@ var simpleLevelPlan = [
  }
 
 Player.prototype.type = "player";
+
+function Lava(pos, ch){
+  this.pos = pos;
+  this.size = new Vector(1, 1);
+  if(ch === "="){
+    this.speed = new Vector(2, 0);
+  }else if(ch === "|"){
+    this.speed = new Vector(0, 2);
+  }else if(ch ==="v"){
+    this.speed = new Vector(0, 3);
+    this.repeatPos = pos;
+  }
+}
+Lava.prototype.type = "lava";
+
+function Coin(pos){
+  this.basePos = this.pos = pos.plus(new Vector(0.2, 0.1));
+  this.size = new Vector(0.6, 0.6);
+  this.wooble = Math.random() * 2* Math.PI;
+}
+Coin.prototype.type = "coin";
+
+var simpleLevel = new Level(simpleLevelPlan);
+console.log(simpleLevel.width, "by", simpleLevel.height);
+//====================================================
+// || DRAWING
+//====================================================
