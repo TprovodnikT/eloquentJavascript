@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+  <style>
+.editForm{
+	padding: 2px;
+}
+.selectBox{
+	margin: 2px 0px 2px 0px;
+	/*width: 100%;*/
+	opacity: 0.7;
+}
+#variableContainer {display: inline-block; margin: 40px 0px 0 5px;}
+#variableContainer table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+#variableContainer table, .variablesHeader{
+	width: 900px;
+	/*padding-left: 10px;*/
+}
+#variableContainer table td, th { border: 1px solid #CCC; }
+#variableContainer table tr td:first-child{ width: 1%;}
+#variableContainer table tr td input{width: 100%;}
+#variableContainer table tr:nth-child(even) { background-color: #F1F1F1; }
+#variableContainer table tr:nth-child(odd) { background-color: #FEFEFE; }
+#variableContainer table textarea {
+	border: 1px solid #CCCCCC;
+	overflow: auto;
+	outline: none;
+
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+#container {
+	/*border: 1px solid black;*/
+}
+#container > div:nth-child(2) {
+
+	display: inline-block;
+	margin: 40px 0 0 5px;
+	/*max-width:900px;*/
+	/*height: 400px;*/
+	/*background-color: #EAEAEA;*/
+	min-width: 600px;
+	/*border: 1px solid black;*/
+}
+#variableContainer > div{
+	/*display: inline-block;*/
+	margin-bottom: 5px;
+	text-align: center;
+	border: 1px solid #999999;
+	background-color: #F1F1F1;
+}
+.variablesHeader {
+	/*margin: 40px 0 0 1	50px;*/
+	margin-bottom: 5px;
+	border: 1px solid black;
+
+}
+#treeMenuContainer{
+	border: 1px solid black;
+	background-color: white;
+	width: 150px;
+	margin: 40px 0px 0 5px;
+	/*float: left;*/
+	display: inline-block;
+    vertical-align: top;
+}
+
+#treeMenuContainer > ul{
+	list-style: none;
+	margin: 0;
+	padding: 2px;
+}
+#treeMenuContainer > ul li{
+	text-decoration: none;
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	cursor: default;
+	padding: 1px 0 1px 5px;
+	border-bottom: 1px solid gray;
+}
+#treeMenuContainer > ul li:last-child {
+	border-bottom: 0;
+}
+#treeMenuContainer > ul .ui-selecting { background: #c1e1e1; }
+#treeMenuContainer > ul .ui-selected { background: #c0e0e0;}
+#treeMenuContainer > ul { list-style-type: none; margin: 0; padding: 0; }
+#treeMenuContainer > ul li { margin: 1px; height: 18px; }
+._changed{
+	background-color: #FF4D4D !important;  
+}
+#saveButton {
+	/*position: fixed;*/
+	/*position: fixed;*/
+	/*margin: 30px 0 0 10px;*/
+	margin: 40px 0px 0 5px;
+	display: inline-block;
+	vertical-align: top;
+	width: 75px;
+	height: 50px;
+	border: 1px solid gray;
+	border-radius: 4px;
+} 
+
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div id="treeMenuContainer">
+      <ul>
+      </ul>
+    </div>
+    <div id="variableContainer"></div>
+  </div>
+  <script src="js/widgets.js" charset="utf-8"></script>
+</body>
+</html>
