@@ -1,0 +1,297 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'nodemon' ]
+2 info using npm@2.11.3
+3 info using node@v0.12.7
+4 verbose install initial load of /home/vbutross/projects_for_edu/eloquentJavascript/package.json
+5 warn package.json Test@0.0.1 No repository field.
+6 warn package.json Test@0.0.1 No license field.
+7 verbose installManyTop reading scoped package data from /home/vbutross/projects_for_edu/eloquentJavascript/node_modules/gulp/package.json
+8 verbose installManyTop reading scoped package data from /home/vbutross/projects_for_edu/eloquentJavascript/node_modules/gulp-connect/package.json
+9 verbose installManyTop reading scoped package data from /home/vbutross/projects_for_edu/eloquentJavascript/node_modules/nodemon/package.json
+10 verbose readDependencies loading dependencies from /home/vbutross/projects_for_edu/eloquentJavascript/package.json
+11 verbose install nodemon is installed as 1.7.1
+12 silly cache add args [ 'nodemon', null ]
+13 verbose cache add spec nodemon
+14 silly cache add parsed spec { raw: 'nodemon',
+14 silly cache add   scope: null,
+14 silly cache add   name: 'nodemon',
+14 silly cache add   rawSpec: '',
+14 silly cache add   spec: '*',
+14 silly cache add   type: 'range' }
+15 silly addNamed nodemon@*
+16 verbose addNamed "*" is a valid semver range for nodemon
+17 silly addNameRange { name: 'nodemon', range: '*', hasData: false }
+18 silly mapToRegistry name nodemon
+19 silly mapToRegistry using default registry
+20 silly mapToRegistry registry https://registry.npmjs.org/
+21 silly mapToRegistry uri https://registry.npmjs.org/nodemon
+22 verbose addNameRange registry:https://registry.npmjs.org/nodemon not in flight; fetching
+23 verbose request uri https://registry.npmjs.org/nodemon
+24 verbose request no auth needed
+25 info attempt registry request try #1 at 17:32:35
+26 verbose request id 3baaedbdfdc2aee9
+27 verbose etag "BQOK5XKL2XVJ1G33CPOUEQR2U"
+28 http request GET https://registry.npmjs.org/nodemon
+29 http 304 https://registry.npmjs.org/nodemon
+30 silly get cb [ 304,
+30 silly get   { date: 'Thu, 15 Oct 2015 14:32:12 GMT',
+30 silly get     via: '1.1 varnish',
+30 silly get     'cache-control': 'max-age=60',
+30 silly get     etag: '"BQOK5XKL2XVJ1G33CPOUEQR2U"',
+30 silly get     age: '9',
+30 silly get     connection: 'keep-alive',
+30 silly get     'x-served-by': 'cache-fra1241-FRA',
+30 silly get     'x-cache': 'HIT',
+30 silly get     'x-cache-hits': '1',
+30 silly get     'x-timer': 'S1444919532.428974,VS0,VE6',
+30 silly get     vary: 'Accept' } ]
+31 verbose etag https://registry.npmjs.org/nodemon from cache
+32 verbose get saving nodemon to /home/vbutross/.npm/registry.npmjs.org/nodemon/.cache.json
+33 silly addNameRange number 2 { name: 'nodemon', range: '*', hasData: true }
+34 silly addNameRange versions [ 'nodemon',
+34 silly addNameRange   [ '0.1.4',
+34 silly addNameRange     '0.1.5',
+34 silly addNameRange     '0.1.6',
+34 silly addNameRange     '0.1.7',
+34 silly addNameRange     '0.1.8',
+34 silly addNameRange     '0.2.0',
+34 silly addNameRange     '0.2.1',
+34 silly addNameRange     '0.2.2',
+34 silly addNameRange     '0.3.0',
+34 silly addNameRange     '0.3.1',
+34 silly addNameRange     '0.3.2',
+34 silly addNameRange     '0.4.0',
+34 silly addNameRange     '0.4.1',
+34 silly addNameRange     '0.5.0',
+34 silly addNameRange     '0.5.1',
+34 silly addNameRange     '0.5.2',
+34 silly addNameRange     '0.5.3',
+34 silly addNameRange     '0.5.4',
+34 silly addNameRange     '0.5.5',
+34 silly addNameRange     '0.5.6',
+34 silly addNameRange     '0.5.7',
+34 silly addNameRange     '0.6.0',
+34 silly addNameRange     '0.6.1',
+34 silly addNameRange     '0.6.2',
+34 silly addNameRange     '0.6.3',
+34 silly addNameRange     '0.6.4',
+34 silly addNameRange     '0.6.5',
+34 silly addNameRange     '0.6.6',
+34 silly addNameRange     '0.6.7',
+34 silly addNameRange     '0.6.8',
+34 silly addNameRange     '0.6.9',
+34 silly addNameRange     '0.6.10',
+34 silly addNameRange     '0.6.11',
+34 silly addNameRange     '0.6.12',
+34 silly addNameRange     '0.6.13',
+34 silly addNameRange     '0.6.14',
+34 silly addNameRange     '0.6.15',
+34 silly addNameRange     '0.6.16',
+34 silly addNameRange     '0.6.17',
+34 silly addNameRange     '0.6.18',
+34 silly addNameRange     '0.6.19',
+34 silly addNameRange     '0.6.20',
+34 silly addNameRange     '0.6.21',
+34 silly addNameRange     '0.6.22',
+34 silly addNameRange     '0.6.23',
+34 silly addNameRange     '0.7.0',
+34 silly addNameRange     '0.7.1',
+34 silly addNameRange     '0.7.2',
+34 silly addNameRange     '0.7.3',
+34 silly addNameRange     '0.7.4',
+34 silly addNameRange     '0.7.5',
+34 silly addNameRange     '0.7.6',
+34 silly addNameRange     '0.7.7',
+34 silly addNameRange     '0.7.8',
+34 silly addNameRange     '0.7.10',
+34 silly addNameRange     '0.9.0',
+34 silly addNameRange     '0.9.1',
+34 silly addNameRange     '0.9.2',
+34 silly addNameRange     '0.9.3',
+34 silly addNameRange     '0.9.5',
+34 silly addNameRange     '0.9.6',
+34 silly addNameRange     '0.9.7',
+34 silly addNameRange     '0.9.10',
+34 silly addNameRange     '0.9.11',
+34 silly addNameRange     '0.9.12',
+34 silly addNameRange     '0.9.14',
+34 silly addNameRange     '0.9.16',
+34 silly addNameRange     '0.9.17',
+34 silly addNameRange     '1.0.0',
+34 silly addNameRange     '1.0.1',
+34 silly addNameRange     '1.0.2',
+34 silly addNameRange     '1.0.2-rc',
+34 silly addNameRange     '0.6.10-a',
+34 silly addNameRange     '1.0.2-rc3',
+34 silly addNameRange     '1.0.2-rc4',
+34 silly addNameRange     '1.0.3',
+34 silly addNameRange     '1.0.4',
+34 silly addNameRange     '1.0.5',
+34 silly addNameRange     '1.0.6',
+34 silly addNameRange     '1.0.7',
+34 silly addNameRange     '1.0.8',
+34 silly addNameRange     '1.0.9',
+34 silly addNameRange     '1.0.10',
+34 silly addNameRange     '1.0.11',
+34 silly addNameRange     '1.0.12',
+34 silly addNameRange     '1.0.13',
+34 silly addNameRange     '1.0.14',
+34 silly addNameRange     '1.0.15',
+34 silly addNameRange     '1.0.16',
+34 silly addNameRange     '1.0.17-rc1',
+34 silly addNameRange     '1.0.17-rc2',
+34 silly addNameRange     '1.0.17',
+34 silly addNameRange     '1.0.18',
+34 silly addNameRange     '1.0.19',
+34 silly addNameRange     '1.0.20',
+34 silly addNameRange     '1.1.0-alpha',
+34 silly addNameRange     '1.1.0',
+34 silly addNameRange     '1.1.1',
+34 silly addNameRange     '1.2.0',
+34 silly addNameRange     '1.2.1',
+34 silly addNameRange     '1.3.0-0',
+34 silly addNameRange     '1.3.0-1',
+34 silly addNameRange     '1.3.0-2',
+34 silly addNameRange     '1.3.0-3',
+34 silly addNameRange     '1.3.0-4',
+34 silly addNameRange     '1.3.0-5',
+34 silly addNameRange     '1.3.0-6',
+34 silly addNameRange     '1.3.0-7',
+34 silly addNameRange     '1.3.0',
+34 silly addNameRange     '1.3.1',
+34 silly addNameRange     '1.3.2',
+34 silly addNameRange     '1.3.3',
+34 silly addNameRange     '1.3.5',
+34 silly addNameRange     '1.3.6',
+34 silly addNameRange     '1.3.7',
+34 silly addNameRange     '1.3.8',
+34 silly addNameRange     '1.4.0',
+34 silly addNameRange     '1.4.1',
+34 silly addNameRange     '1.5.0-alpha1',
+34 silly addNameRange     '1.5.0-alpha2',
+34 silly addNameRange     '1.5.0-alpha3',
+34 silly addNameRange     '1.5.0-alpha4',
+34 silly addNameRange     '1.4.2',
+34 silly addNameRange     '1.5.0',
+34 silly addNameRange     '1.5.1',
+34 silly addNameRange     '1.6.0',
+34 silly addNameRange     '1.6.1',
+34 silly addNameRange     '1.7.0',
+34 silly addNameRange     '1.7.1' ] ]
+35 silly addNamed nodemon@1.7.1
+36 verbose addNamed "1.7.1" is a plain semver version for nodemon
+37 silly cache afterAdd nodemon@1.7.1
+38 verbose afterAdd /home/vbutross/.npm/nodemon/1.7.1/package/package.json not in flight; writing
+39 verbose afterAdd /home/vbutross/.npm/nodemon/1.7.1/package/package.json written
+40 silly install resolved [ { name: 'nodemon',
+40 silly install resolved     homepage: 'http://nodemon.io',
+40 silly install resolved     author: { name: 'Remy Sharp', url: 'http://github.com/remy' },
+40 silly install resolved     bin: { nodemon: './bin/nodemon.js' },
+40 silly install resolved     engines: { node: '>=0.8' },
+40 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/remy/nodemon.git' },
+40 silly install resolved     description: 'Simple monitor script for use during development of a node.js app.',
+40 silly install resolved     keywords:
+40 silly install resolved      [ 'monitor',
+40 silly install resolved        'development',
+40 silly install resolved        'restart',
+40 silly install resolved        'autoload',
+40 silly install resolved        'reload',
+40 silly install resolved        'terminal' ],
+40 silly install resolved     preferGlobal: 'true',
+40 silly install resolved     license: 'MIT',
+40 silly install resolved     main: './lib/nodemon',
+40 silly install resolved     scripts:
+40 silly install resolved      { coverage: 'istanbul cover _mocha -- --timeout 30000 --ui bdd --reporter list test/**/*.test.js',
+40 silly install resolved        lint: 'jscs lib/**/*.js -v',
+40 silly install resolved        ':spec': 'mocha --timeout 30000 --ui bdd test/**/*.test.js',
+40 silly install resolved        test: 'npm run lint && npm run spec',
+40 silly install resolved        spec: 'for FILE in test/**/*.test.js; do echo $FILE; ./node_modules/.bin/mocha --timeout 30000 $FILE; if [ $? -ne 0 ]; then exit 1; fi; sleep 1; done',
+40 silly install resolved        web: 'node web',
+40 silly install resolved        'semantic-release': 'semantic-release pre && npm publish && semantic-release post' },
+40 silly install resolved     devDependencies:
+40 silly install resolved      { async: '1.4.2',
+40 silly install resolved        'coffee-script': '~1.7.1',
+40 silly install resolved        connect: '~2.19.1',
+40 silly install resolved        istanbul: '~0.2.10',
+40 silly install resolved        jscs: '2.1.1',
+40 silly install resolved        mocha: '2.3.3',
+40 silly install resolved        should: '~4.0.0',
+40 silly install resolved        'semantic-release': '4.3.5' },
+40 silly install resolved     dependencies:
+40 silly install resolved      { chokidar: '1.1.0',
+40 silly install resolved        debug: '2.2.0',
+40 silly install resolved        'es6-promise': '3.0.2',
+40 silly install resolved        'lodash.defaults': '3.1.2',
+40 silly install resolved        minimatch: '~0.3.0',
+40 silly install resolved        'ps-tree': '~0.0.3',
+40 silly install resolved        touch: '1.0.0',
+40 silly install resolved        undefsafe: '0.0.3',
+40 silly install resolved        'update-notifier': '0.5.0' },
+40 silly install resolved     version: '1.7.1',
+40 silly install resolved     gitHead: 'c606ad507d76cc4cf98f35543b5ffed74a58e371',
+40 silly install resolved     bugs: { url: 'https://github.com/remy/nodemon/issues' },
+40 silly install resolved     _id: 'nodemon@1.7.1',
+40 silly install resolved     _shasum: '922633a03b6835c2c29013883be4c7b4fc5f24e4',
+40 silly install resolved     _from: 'nodemon@*',
+40 silly install resolved     _npmVersion: '2.14.6',
+40 silly install resolved     _nodeVersion: '4.1.1',
+40 silly install resolved     _npmUser: { name: 'remy', email: 'remy@leftlogic.com' },
+40 silly install resolved     dist:
+40 silly install resolved      { shasum: '922633a03b6835c2c29013883be4c7b4fc5f24e4',
+40 silly install resolved        tarball: 'http://registry.npmjs.org/nodemon/-/nodemon-1.7.1.tgz' },
+40 silly install resolved     maintainers: [ [Object] ],
+40 silly install resolved     directories: {},
+40 silly install resolved     _resolved: 'https://registry.npmjs.org/nodemon/-/nodemon-1.7.1.tgz',
+40 silly install resolved     readme: 'ERROR: No README data found!' } ]
+41 info install nodemon@1.7.1 into /home/vbutross/projects_for_edu/eloquentJavascript
+42 info installOne nodemon@1.7.1
+43 verbose installOne of nodemon to /home/vbutross/projects_for_edu/eloquentJavascript not in flight; installing
+44 verbose lock using /home/vbutross/.npm/_locks/nodemon-3707079016b1c227.lock for /home/vbutross/projects_for_edu/eloquentJavascript/node_modules/nodemon
+45 silly install write writing nodemon 1.7.1 to /home/vbutross/projects_for_edu/eloquentJavascript/node_modules/nodemon
+46 verbose unbuild node_modules/nodemon
+47 info preuninstall nodemon@1.7.1
+48 info uninstall nodemon@1.7.1
+49 verbose unbuild rmStuff nodemon@1.7.1 from /home/vbutross/projects_for_edu/eloquentJavascript/node_modules
+50 silly gentlyRm /home/vbutross/projects_for_edu/eloquentJavascript/node_modules/.bin/nodemon is being gently removed
+51 silly gentlyRm verifying /home/vbutross/projects_for_edu/eloquentJavascript is an npm working directory
+52 silly gentlyRm containing path /home/vbutross/projects_for_edu/eloquentJavascript is under npm's control, in /home/vbutross/projects_for_edu/eloquentJavascript
+53 silly gentlyRm deletion target /home/vbutross/projects_for_edu/eloquentJavascript/node_modules/.bin/nodemon is under /home/vbutross/projects_for_edu/eloquentJavascript
+54 verbose gentlyRm vacuuming from /home/vbutross/projects_for_edu/eloquentJavascript/node_modules/.bin/nodemon up to /home/vbutross/projects_for_edu/eloquentJavascript
+55 silly vacuum-fs removing /home/vbutross/projects_for_edu/eloquentJavascript/node_modules/.bin/nodemon
+56 silly vacuum-fs quitting because other entries in /home/vbutross/projects_for_edu/eloquentJavascript/node_modules/.bin
+57 info postuninstall nodemon@1.7.1
+58 silly gentlyRm /home/vbutross/projects_for_edu/eloquentJavascript/node_modules/nodemon is being purged from base /home/vbutross/projects_for_edu/eloquentJavascript
+59 verbose gentlyRm don't care about contents; nuking /home/vbutross/projects_for_edu/eloquentJavascript/node_modules/nodemon
+60 silly vacuum-fs purging /home/vbutross/projects_for_edu/eloquentJavascript/node_modules/nodemon
+61 verbose unlock done using /home/vbutross/.npm/_locks/nodemon-3707079016b1c227.lock for /home/vbutross/projects_for_edu/eloquentJavascript/node_modules/nodemon
+62 verbose stack Error: EACCES, unlink '/home/vbutross/projects_for_edu/eloquentJavascript/node_modules/nodemon/node_modules/.bin/touch'
+62 verbose stack     at Error (native)
+63 verbose cwd /home/vbutross/projects_for_edu/eloquentJavascript/js
+64 error Linux 3.13.0-65-generic
+65 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "nodemon"
+66 error node v0.12.7
+67 error npm  v2.11.3
+68 error path /home/vbutross/projects_for_edu/eloquentJavascript/node_modules/nodemon/node_modules/.bin/touch
+69 error code EACCES
+70 error errno -13
+71 error Error: EACCES, unlink '/home/vbutross/projects_for_edu/eloquentJavascript/node_modules/nodemon/node_modules/.bin/touch'
+71 error     at Error (native)
+71 error  { [Error: EACCES, unlink '/home/vbutross/projects_for_edu/eloquentJavascript/node_modules/nodemon/node_modules/.bin/touch']
+71 error   errno: -13,
+71 error   code: 'EACCES',
+71 error   path: '/home/vbutross/projects_for_edu/eloquentJavascript/node_modules/nodemon/node_modules/.bin/touch' }
+72 error Please try running this command again as root/Administrator.
+73 verbose exit [ -13, true ]
+74 verbose unbuild node_modules/nodemon
+75 silly gentlyRm /home/vbutross/projects_for_edu/eloquentJavascript/node_modules/nodemon is being purged from base /home/vbutross/projects_for_edu/eloquentJavascript
+76 verbose gentlyRm don't care about contents; nuking /home/vbutross/projects_for_edu/eloquentJavascript/node_modules/nodemon
+77 silly vacuum-fs purging /home/vbutross/projects_for_edu/eloquentJavascript/node_modules/nodemon
+78 error error rolling back Error: EACCES, unlink '/home/vbutross/projects_for_edu/eloquentJavascript/node_modules/nodemon/node_modules/.bin/touch'
+78 error error rolling back     at Error (native)
+78 error error rolling back  { [Error: EACCES, unlink '/home/vbutross/projects_for_edu/eloquentJavascript/node_modules/nodemon/node_modules/.bin/touch']
+78 error error rolling back   errno: -13,
+78 error error rolling back   code: 'EACCES',
+78 error error rolling back   path: '/home/vbutross/projects_for_edu/eloquentJavascript/node_modules/nodemon/node_modules/.bin/touch' }
